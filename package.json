@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/daniel-molina23/ipfs-client-file/issues"
   },
-  "homepage": "https://github.com/daniel-molina23/ipfs-client-file#readme"
+  "homepage": "https://github.com/daniel-molina23/ipfs-client-file#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
