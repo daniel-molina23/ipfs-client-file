@@ -1,22 +1,20 @@
 {
-  "name": "unbox",
+  "name": "ipfs-client-file",
   "version": "1.0.0",
-  "description": "Decentralized dropbox clone",
-  "main": "app.js",
+  "description": "��i\u0000p\u0000f\u0000s\u0000-\u0000c\u0000l\u0000i\u0000e\u0000n\u0000t\u0000-\u0000f\u0000i\u0000l\u0000e\u0000 \u0000r\u0000e\u0000p\u0000o\u0000\r\u0000 \u0000",
+  "main": "index.js",
   "scripts": {
-    "bundle": "browserify public/app.js > public/bundle.js",
-    "start": "http-server -c-1 -p 12345 public",
-    "dev": "npm run bundle && npm run start"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Daniel Molina",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniel-molina23/ipfs-client-file.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "ipfs": "^0.54.4",
-    "stream-buffers": "^3.0.2"
+  "bugs": {
+    "url": "https://github.com/daniel-molina23/ipfs-client-file/issues"
   },
-  "devDependencies": {
-    "browserify": "^17.0.0",
-    "cross-env": "^7.0.3",
-    "http-server": "^0.12.3"
-  }
+  "homepage": "https://github.com/daniel-molina23/ipfs-client-file#readme"
 }
