@@ -1,80 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/index.css">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>IPFS - Unbox!</title>
-    </head>
-    <body ondragover="event.preventDefault">
-        <header>
-            <img src="assets/ipfs-logo.svg" alt="IPFS - Unbox">
-        </header>        
-        <main>
-            <div class="box node">
-                <h2>Node</h2>
-                <div>
-                    <div>
-                        <h3>ID</h3>
-                        <pre class="node-id"></pre>
-                    </div>
-                    <div>
-                        <h3>Address</h3>
-                        <pre class="node-addresses"></pre>
-                    </div>
-                    <div>
-                        <h3>Logs</h3>
-                        <pre id="logs" class="success">Initializing Node ....</pre>
-                    </div>
-                </div>
-            </div>
-            <div class="columns">
-                <div id="peers" class="box disabled">
-                    <h2>Peers</h2>
-                    <div class="input-button">
-                        <input type="text" placeholder="Multiaddr" id="multiaddr-input" disabled>
-                        <button id="peer-btn" disabled>Connect</button>
-                    </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Connected peers</th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
-                </div>
-                <div id="files" class="box disabled" ondragover="event.preventDefault">
-                    <h2>Files</h2>
-                    <div class="input-button">
-                        <input type="text" placeholder="MultiHash" id="multihash-input" disabled>
-                        <button id="fetch-btn" disabled>Fetch</button>
-                    </div>
-                    <div id="drag-container">
-                        <img src="assets/upload.svg" alt="Upload">
-                        <p><b>Drag and Drop</b> a file to upload it.</p>
-                    </div>
-                    <div id="progress-container">
-                        <div id="progress-bar"></div>
-                    </div>
-                    <table id="file-history">
-                        <thead>
-                            <tr>
-                                <th>NAME</th>
-                                <th>CID</th>
-                                <th>Size</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="empty-row">
-                                <td colspan="4">There are no files currently</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </main>
-        <script src="bundle.js"></script>
+<html>
+<head>
+    <title>IPFS DropBox Clone</title>
+</head>
+    <body>
+        <button id="upload-file" onclick="addFile()">Upload File</button>
+        <script type="text/javascript" src="bundle.js"></script>
     </body>
 </html>
